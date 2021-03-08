@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" href="css/tabular.css"/>
+		<link rel="stylesheet" href="css/results.css"/>
+		<script src="js/App.js"></script>
+		<script src="js/model.js"></script>
+		<script src="js/aux.js"></script>
+		<script src="js/init.js"></script>
+		<title>Monty Hall problem</title>
+	</head>
+	<body>
+		<h1>Monty Hall problem</h1>
+
+		<p>Articles in <a href="https://en.wikipedia.org/wiki/Monty_Hall_problem">English</a> and in <a href="https://nl.wikipedia.org/wiki/Driedeurenprobleem">Dutch</a></p>
+
+		<table id="contrasting">
+			<tr>
+				<th rowspan="2">Treasure behind</th>
+				<th rowspan="2">Choice 1</th>
+				<th rowspan="2">Interim reveal of</th>
+				<th colspan="2">Final choice&hellip;</th>
+			</tr>
+			<tr>
+				<th>&hellip;kept</th>
+				<th>&hellip;changed</th>
+		</table>
+		<p>
+			Chance of winning if the contestant decides to keep his/her first choice is obviously one-to-three. What is the chance of winning if the contestant decides to <strong>change</strong> his/her first choice?
+		</p>
+		<p>
+			<span>Let us estimate it by running</span>
+			<select id="num-of-experiments">
+				<option>10</option>
+				<option>100</option>
+				<option>1000</option>
+				<option selected>10000</option>
+			</select>
+			<span>experiments:</span>
+			<span id="percent-field"></span>
+		</p>
+		<p>The Monty Hall problem means tht we have to prove (and make it easily understood), that the the chance of winning if the contestant decides to change his/her first choice is exactly two-to-three.</p>
+	</body>
+</html>
